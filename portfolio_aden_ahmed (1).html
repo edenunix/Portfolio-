@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Aden Ahmed Aden</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    .header {
+      background: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero .btn {
+      background: #fff;
+      color: #2575fc;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 4rem 2rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #444;
+    }
+
+    .skills ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 0;
+    }
+
+    .projects .project {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+    }
+
+    .contact .btn {
+      background: #2575fc;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 2rem;
+    }
+  </style>
+  <script defer>
+    // Animation légère sur le bouton
+    document.addEventListener('DOMContentLoaded', function () {
+      const btn = document.querySelector('.hero .btn');
+      btn.addEventListener('mouseover', () => {
+        btn.style.transform = 'scale(1.05)';
+      });
+
+      btn.addEventListener('mouseout', () => {
+        btn.style.transform = 'scale(1)';
+      });
+    });
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Aden Ahmed</div>
+      <ul class="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Salut, je suis Aden Ahmed Aden</h1>
+    <p>Développeur Web & Ingénieur Logiciel Freelance</p>
+    <a href="#contact" class="btn">Me Contacter</a>
+  </section>
+
+  <section id="about" class="about">
+    <h2>À propos de moi</h2>
+    <p>Diplômé en Génie Logiciel, je suis passionné par le développement web, la création de solutions performantes et esthétiques, ainsi que par le freelancing via des plateformes comme Upwork. Basé à Balbala Cheikh Moussa.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Compétences</h2>
+    <ul>
+      <li>HTML / CSS / JavaScript</li>
+      <li>React.js / Node.js</li>
+      <li>Responsive Design</li>
+      <li>Développement Fullstack</li>
+      <li>Gestion de projet / Méthodes Agile</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projets</h2>
+    <div class="project">
+      <h3>Boutique en ligne</h3>
+      <p>Création d'une boutique e-commerce avec panier, système de paiement, interface admin.</p>
+    </div>
+    <div class="project">
+      <h3>Plateforme de streaming local</h3>
+      <p>Projet de centre de loisirs numérique : films, jeux vidéo, barbecue et détente.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email : <a href="mailto:edenlefaahmed@gmail.com">edenlefaahmed@gmail.com</a></p>
+    <p>Téléphone : <a href="tel:+25377614248">+253 77 61 42 48</a></p>
+    <a href="https://support.upwork.com/hc/en-us/requests" class="btn" target="_blank">Voir mon profil Upwork</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aden Ahmed Aden - Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
